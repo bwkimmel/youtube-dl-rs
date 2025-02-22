@@ -276,6 +276,7 @@ pub struct SingleVideo {
 
 #[derive(Clone, Serialize, Deserialize, Debug, Default)]
 pub struct Subtitle {
+    pub name: Option<String>,
     pub data: Option<String>,
     pub ext: Option<String>,
     pub url: Option<String>,
